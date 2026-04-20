@@ -1,0 +1,13 @@
+﻿<Solution>
+    <Configurations>
+        <BuildType Name="Canary" />
+        <BuildType Name="Debug" />
+        <BuildType Name="Release" />
+        <Platform Name="Windows" />
+        <Platform Name="Android" />
+    </Configurations>
+    <Project Path="NEZZ/NEZZ.csproj">
+        <Platform Solution="*|Windows" Project="Windows" />
+        <Platform Solution="*|Android" Project="Android" />
+    </Project>
+</Solution>

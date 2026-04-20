@@ -1,0 +1,32 @@
+﻿using NEZZ.Roles.Crewmate;
+using static NEZZ.Options;
+
+namespace NEZZ.Roles.Modifiers.Crewmate;
+
+public class Bloodthirst : IModifier
+{
+    public CustomRoles Role => CustomRoles.Bloodthirst;
+    private const int Id = 21700;
+    public ModifierTypes Type => ModifierTypes.Mixed;
+
+    public void SetupCustomOption()
+    {
+        SetupAdtRoleOptions(Id, CustomRoles.Bloodthirst, canSetNum: true);
+    }
+    public void Init()
+    { }
+    public void Add(byte playerId, bool gameIsLoading = true)
+    {
+        Alchemist.AddBloodlus();
+    }
+    public void Remove(byte playerId)
+    { }
+
+    public static void OnTaskComplete(PlayerControl player)
+    {
+        if (Alchemist.BloodthirstList.ContainsKey(player.PlayerId)) return;
+
+        Alchemist.BloodthirstList[player.PlayerId] = player.PlayerId;
+        player.Notify(Utils.ColorString(Utils.GetRoleColor(CustomRoles.Bloodthirst), Translator.GetString("BloodthirstAdded")));
+    }
+}
