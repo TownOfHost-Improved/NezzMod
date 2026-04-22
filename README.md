@@ -28,7 +28,7 @@
 
 <br>
 
-[![Total Downloads](https://img.shields.io/github/downloads/NEZZptimized/TownofHost-Optimized/total)](../../releases)
+[![Total Downloads](https://img.shields.io/github/downloads/TownOfHost-Improved/NezzMod/total)](../../releases)
 
 **Credit to these mods and their developers for the code and help:**
 ### :star: [EHR (Formerly TOHE+)](https://github.com/Gurge44/EndlessHostRoles)
