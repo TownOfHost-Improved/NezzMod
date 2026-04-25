@@ -3,7 +3,7 @@
 
 <br>
 
-<img align="left" alt="Cover" src="Resources/Background/CurrentArtWinner/NEZZ_140.png" width="50%" height="300" /> 
+<img align="left" alt="Cover" src="Resources/Background/CurrentArtWinner/Njp.png" width="50%" height="300" /> 
 
 <p align="right">
   
